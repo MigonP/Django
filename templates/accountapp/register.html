@@ -1,0 +1,12 @@
+{%extends 'core template.html'%}
+{% load bootstrap %}
+
+{%block title %}GameTok{% endblock %}
+{%block page %}   {% csrf_token %}
+
+<form method="post">
+        {% csrf_token %}
+        {{ form_usr|bootstrap }}
+        <button type="submit">Register</button>
+</form>
+{% endblock %}

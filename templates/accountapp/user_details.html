@@ -1,0 +1,39 @@
+{%extends 'core template.html'%}
+
+{%block title %}GameTok{% endblock %}
+{%block page %}
+{{ obj.root_user }}
+
+<br><br>
+{% for i in vid_obj %}
+
+        {{ i.video_file }}
+        <br>
+
+{%endfor %}
+
+{%load static%}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

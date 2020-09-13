@@ -1,0 +1,43 @@
+{%extends 'core template.html'%}
+{% load bootstrap %}
+{%block title %}GameTok{% endblock %}
+{%block page %}
+{% if usr.is_authenticated %}
+
+    Watching...
+    <br><br>
+    <center><h1><a href="user_detiles/<usr_id>">Profile:{{usr}}</a></h1></center>
+    <center><h1><a href="{% url 'logout'%}">Logout</a></h1></center>
+    <br>
+    <hr>
+
+  {% for i in obj %}
+
+        <center><div class="card" style="width:28rem;"</center>
+          <div class="card-body">
+            <center><h5 class="card-title">{{ i.video_capition }}</h5></center>
+            <center><video width='400' controls>
+            <source src="{{ i.video_file.url }}" type='video/mp4'>
+            </video></center>
+          </div>
+        </div>
+
+
+  {% endfor %}
+
+
+<br>
+<hr>
+
+
+
+<center><h1><a href="CreateVid/"><i class="fas fa-plus-circle"></i></a></h1></center>
+{% else %}
+
+
+
+<br><br>
+<center><h2><a href="/Account/register/">Register</a></h2></center> <center><h2><a href="/Account/login/">Login</a></h2></center>
+
+{% endif %}
+{% endblock %}

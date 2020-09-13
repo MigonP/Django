@@ -30,6 +30,7 @@ class Film(models.Model):
         return str(self.title)
 
 
+
 class Rate(models.Model):
     com = models.TextField(default='')
     star = models.IntegerField(default=10)
@@ -37,7 +38,10 @@ class Rate(models.Model):
                              related_name='rate')
 
 
+
 @receiver(post_save, sender=User)
 def create_auth_token(sender, instance=None, created=False, **kawrgs):
     if created:
         Token.objects.create(user=instance)
+
+
