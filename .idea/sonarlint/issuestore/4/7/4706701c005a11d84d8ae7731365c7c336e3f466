@@ -1,7 +1,0 @@
-
-kpython:S2208"GImport only needed names or import the module and then use its members.(ÅÙï„úÿÿÿÿ8æÛÈÇ.
-vpython:S1542"RRename function "ShowMeApp" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(Ä– ıÿÿÿÿ8“÷íõÄ.
-vpython:S1542"RRename function "CreateVid" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(•Ú­ıÿÿÿÿ8õæØåÇ.
-rpython:S1542"NRename function "FPage" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(è ›×ÿÿÿÿÿ8š€ÌõÄ.
-kpython:S2208"GImport only needed names or import the module and then use its members.(Í£øÿÿÿÿ8æÛÈÇ.
-=python:S125/"Remove this commented out code.(Š‹Ïã8‰ç€Â.
